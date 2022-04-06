@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+		<style type="text/css">
+			
+#cat {
+
+	background-color:darkgreen;
+}
+		</style>
+
+</head>
+
+<h1>Holiday Playlist</h1>
+
+<body id="cat">
+
+<a><div></div></a>
+
+		<script type="text/javascript">
+    
+    function makeSquare (x) {
+
+            var square = document.createElement('div');
+            var link = document.createElement ('a')
+                  document.body.appendChild(link);
+              link.appendChild(square)
+              link.href = x + ".html"          
+    
+            square.style.width = "400px";
+            square.style.height = "400px";
+            square.style.display = "inline-block";
+            square.style.margin = "10px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "1px";
+            square.style.backgroundColor = "red";
+
+            square.style.backgroundImage = "url(" + x + ".jpg)";
+
+            square.innerText = x;
+            square.style.fontSize= "100px";
+            square.style.textAlign= "center";
+
+            square.style.id = "square" + x;};
+
+
+    for (var i = 1; i < 32; i++) 
+    { makeSquare(i);}
+</script>
+		
+	</div>
+
+</body>
+</html>
